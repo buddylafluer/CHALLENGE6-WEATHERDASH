@@ -15,19 +15,25 @@
         </div>
     </section>
     <div class="columns">
-        <div class="column is-one-quarter pt-5">
+        <div class="column is-one-quarter pt-5 pl-5">
             <h2 class="title">Search for a City:</h2>
-            <input class="input">
-            <button class="button is-info">Search</button>
-        </div>
-        <div class="column pt-5">
-            <div class="box has-background-light">
-                <h1 class="title">CITY (DATE)</h1>
-                <p>Temperature:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+            <div class="columns pl-3">
+                <input id="citySearchInput" class="column input">
+                <button id="citySearchButton" class="column is-one-quarter button is-info">Search</button>
             </div>
-            <div class="pt-5">
+            <div>
+                <ul id="city-list">
+                </ul>
+            </div>
+        </div>
+        <div class="column pt-5 pr-5">
+            <div class="box has-background-light">
+                <h1 id="todayDiv" class="title">CITY (DATE)</h1>
+                <p id="todayT">Temperature:</p>
+                <p id="todayW">Wind:</p>
+                <p id="todayH">Humidity:</p>
+            </div>
+            <div class="pt-5 pr-5">
                 <h1 class="subtitle">5-Day Forecast:</h1>
             </div>
             <div class="columns pt-5">
@@ -35,45 +41,45 @@
                     <div class="box has-background-info-dark">
                         <h1>DATE</h1>
                         <i class=" "></i>
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
+                        <p id="temp1">Temp:</p>
+                        <p id="wind1">Wind:</p>
+                        <p id="humi1">Humidity:</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box has-background-info-dark">
                         <h1>DATE</h1>
                         <i class=" "></i>
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
+                        <p id="temp2">Temp:</p>
+                        <p id="wind2">Wind:</p>
+                        <p id="humi2">Humidity:</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box has-background-info-dark">
                         <h1>DATE</h1>
                         <i class=" "></i>
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
+                        <p id="temp3">Temp:</p>
+                        <p id="wind3">Wind:</p>
+                        <p id="humi3">Humidity:</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box has-background-info-dark">
                         <h1>DATE</h1>
                         <i class=" "></i>
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
+                        <p id="temp4">Temp:</p>
+                        <p id="wind4">Wind:</p>
+                        <p id="humi4">Humidity:</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box has-background-info-dark">
                         <h1>DATE</h1>
                         <i class=" "></i>
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
+                        <p id="temp5">Temp:</p>
+                        <p id="wind5">Wind:</p>
+                        <p id="humi5">Humidity:</p>
                     </div>
                 </div>
             </div>
@@ -81,5 +87,7 @@
 
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./assets/script.js"></script>
 </html>
