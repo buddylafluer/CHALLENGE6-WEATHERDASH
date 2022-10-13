@@ -14,7 +14,7 @@ var savedCities = JSON.parse (localStorage.getItem("savedCities")) || [];
 for (var i = 0; i < savedCities.length; i ++) {
     var city = savedCities[i];
     var cityNameEl = $("<li>");//making line
-    cityNameEl.addClass("btn list-group-item");
+    cityNameEl.addClass("button");
     cityNameEl.text(city);
     $("#city-list").append(cityNameEl);//creating city list
 }
